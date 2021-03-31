@@ -1,0 +1,45 @@
+.about {
+    @extend %section;
+    padding-bottom: 47px;
+}
+
+.about__container {
+    @extend %container;
+}
+
+.features {
+    @extend %list;
+    @include grid();
+}
+
+.features__item {
+    margin-left: 30px;
+    margin-top: 30px;
+    flex-basis: calc(100% / 4 - 30px);
+}
+
+.features__thumb {
+    @include flexCentered();
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: rgba(245, 244, 250, 1);
+    border-radius: 4px;
+    text-align: center;
+}
+
+.features__title {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $secondaryTextColor;
+}
+
+.features__desc {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}

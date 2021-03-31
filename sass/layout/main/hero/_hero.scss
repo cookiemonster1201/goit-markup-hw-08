@@ -1,0 +1,38 @@
+.hero__container {
+    @extend %container;
+}
+
+.hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #c4c4c4;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/main/hero-background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero__wrapper {
+    max-width: 696px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.hero__title {
+    margin-bottom: 43px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $darkThemeTextColor;
+}

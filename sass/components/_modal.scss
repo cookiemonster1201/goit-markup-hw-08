@@ -1,0 +1,52 @@
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    padding: 40px;
+    width: 528px;
+    height: 581px;
+    overflow: hidden;
+    background-color: $primaryBgColor;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .backdrop--is-hidden > & {
+        transform: translate(-50%, -50%) scale(0.8);
+    }
+}
+
+.modal__close-button {
+    @include flexCentered();
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    background-color: $primaryBgColor;
+    color: #000;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.modal__close-icon {
+    fill:currentColor;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    .modal__close-button:hover > &,
+    .modal__close-button:focus > & {
+        color: $accentColor;
+}
+}
+
+.modal__appeal {
+    margin-bottom: 12px;
+    font-family: $mainFont;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $secondaryTextColor;
+}

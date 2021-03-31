@@ -1,0 +1,10 @@
+.card-set {
+    @extend %list;
+    @include grid();
+}
+
+.card-set__item {
+    margin-left: 30px;
+    margin-top: 30px;
+    flex-basis: calc(100% / 3 - 30px);
+}

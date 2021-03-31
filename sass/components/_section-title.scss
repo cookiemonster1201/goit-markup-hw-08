@@ -1,0 +1,17 @@
+.section-title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: $secondaryTextColor;
+}
+
+.about__title {
+    @extend %visually-hidden;
+}
+
+.portfolio__title {
+    @extend %visually-hidden;
+}

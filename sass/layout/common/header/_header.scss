@@ -1,0 +1,15 @@
+.header {
+    background-color: $primaryBgColor;
+    border-bottom: 1px solid #eee;
+}
+
+.header__container {
+    @extend %container;
+    @include flexCentered($justifyContent: space-between);
+}
+
+.header__nav {
+    @include flexCentered();
+}
+
+
