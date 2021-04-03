@@ -1,33 +1,7 @@
-@import "./base/fonts";
-@import "./base/common-styles";
-@import "./base/container";
-@import "./base/section";
+@import "./base/base";
 
-@import "./utilities/variables";
-@import "./utilities/placeholders";
-@import "./utilities/mixins";
-@import "./utilities/visually-hidden";
+@import "./utilities/utilities";
 
-@import "./components/logo";
-@import "./components/button";
-@import "./components/backdrop";
-@import "./components/modal";
-@import "./components/section-title";
-@import "./components/social";
-@import "./components/user-info-form";
+@import "./components/components";
 
-@import "./layout/common/header/header";
-@import "./layout/common/header/nav-menu";
-@import "./layout/common/header/contacts";
-@import "./layout/common/footer/footer";
-@import "./layout/common/footer/subscription-form";
-@import "./layout/main/hero/hero";
-@import "./layout/main/about";
-@import "./layout/main/gallery";
-@import "./layout/main/employees/employees";
-@import "./layout/main/employees/team-member-card";
-@import "./layout/main/clients";
-@import "./layout/portfolio/portfolio";
-@import "./layout/portfolio/projects-filter";
-@import "./layout/portfolio/card-set";
-@import "./layout/portfolio/project-card";
+@import "./layout/layout";
