@@ -72,14 +72,10 @@
 }
 
 .user-info-form__button {
-    @include button(10px, 700, 1.87, 0.03em, $accentColor, $darkThemeTextColor);
     min-width: 200px;
     align-self: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-
-.user-info-form__terms-checkbox {
-    @extend %visually-hidden;
-} 
 
 .user-info-form__terms-label {
     @include flexCentered();
@@ -117,6 +113,5 @@
 }
 
 .user-info-form__terms-link {
-    @extend %link;
     color: $accentColor;
 }

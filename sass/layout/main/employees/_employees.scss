@@ -1,14 +1,8 @@
 .employees {
-    @extend %section;
     background-color: $secondaryBgColor;
 }
 
-.employees__container {
-    @extend %container;
-}
-
 .employees__set {
-    @extend %list;
     @include grid();
 }
 

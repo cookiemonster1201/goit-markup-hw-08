@@ -1,14 +1,8 @@
 .gallery {
-    @extend %section;
     padding-top: 47px;
 }
 
-.gallery__container {
-    @extend %container;
-}
-
 .gallery-set {
-    @extend %list;
     @include grid();
 }
 

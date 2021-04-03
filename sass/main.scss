@@ -1,11 +1,15 @@
+@import "./base/fonts";
+@import "./base/common-styles";
+@import "./base/container";
+@import "./base/section";
+
 @import "./utilities/variables";
 @import "./utilities/placeholders";
 @import "./utilities/mixins";
-
-@import "./base/common-styles";
-@import "./base/container";
+@import "./utilities/visually-hidden";
 
 @import "./components/logo";
+@import "./components/button";
 @import "./components/backdrop";
 @import "./components/modal";
 @import "./components/section-title";
@@ -18,7 +22,6 @@
 @import "./layout/common/footer/footer";
 @import "./layout/common/footer/subscription-form";
 @import "./layout/main/hero/hero";
-@import "./layout/main/hero/hero-button";
 @import "./layout/main/about";
 @import "./layout/main/gallery";
 @import "./layout/main/employees/employees";

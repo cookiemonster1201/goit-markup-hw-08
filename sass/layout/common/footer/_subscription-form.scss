@@ -22,10 +22,10 @@
 }
 
 .subscription-form__button {
-    @include button(10px, 700, 1.87, 0.03em, $accentColor, $darkThemeTextColor);
     @include flexCentered();
-    min-width: 200px;
     margin-left: 12px;
+    min-width: 200px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .subscription-form__button-icon {

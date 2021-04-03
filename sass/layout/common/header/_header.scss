@@ -4,7 +4,6 @@
 }
 
 .header__container {
-    @extend %container;
     @include flexCentered($justifyContent: space-between);
 }
 

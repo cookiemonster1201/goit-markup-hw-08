@@ -1,14 +1,8 @@
 .about {
-    @extend %section;
     padding-bottom: 47px;
 }
 
-.about__container {
-    @extend %container;
-}
-
 .features {
-    @extend %list;
     @include grid();
 }
 

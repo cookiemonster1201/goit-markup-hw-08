@@ -1,5 +1,4 @@
 .nav-menu {
-    @extend %list;
     @include flexCentered();
     margin-left: 93px;
 
@@ -9,7 +8,6 @@
 }
 
 .nav-menu__link {
-    @extend %link;
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;

@@ -5,13 +5,8 @@
 }
 
 .footer__container {
-    @extend %container;
     display: flex;
     align-items: baseline;
-}
-
-.address-info {
-    @extend %address;
 }
 
 .address-info__physical-address {
@@ -22,12 +17,8 @@
     color: $darkThemeTextColor;
 }
 
-.address-info__contacts {
-    @extend %list;
-}
 
 .address-info__link {
-    @extend %link;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -40,8 +31,10 @@
     }
 }
 
-.address-info__item:not(:last-child) {
-    margin-bottom: 9px;
+.address-info__item {
+    &:not(:last-child) {
+        margin-bottom: 9px;
+    }
 }
 
 .footer__invitation {

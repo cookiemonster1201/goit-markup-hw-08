@@ -1,5 +1,0 @@
-
-.hero__button {
-    @include button(10px, 700, 1.87, 0.03em, $accentColor, $darkThemeTextColor);
-    min-width: 200px;
-}

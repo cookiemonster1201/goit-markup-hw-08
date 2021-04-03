@@ -1,15 +1,21 @@
 .projects-filter {
-    @extend %list;
     @include flexCentered();
     margin-bottom: 50px;
 }
 
-.projects-filter__option:not(:first-child) {
+.projects-filter__option {
+  &:not(:first-child) {
     margin-left: 8px;
+  }
 }
 
 .projects-filter__button {
-  @include button(6px 22px, 500, 1.62, 0.03em, #f5f4fa, $secondaryTextColor, none);
+  padding: 6px 22px;
+  font-weight: 500;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  background-color: #f5f4fa;
+  color: $secondaryTextColor;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
   box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
   background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
