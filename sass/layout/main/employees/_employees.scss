@@ -6,8 +6,6 @@
 
 .employees__item {
     @media screen and (max-width: 767px) {
-        width: 450px;
-        
         &:not(:last-child) {
             margin-bottom: 30px;
         }
@@ -15,6 +13,7 @@
 }
 
 .team-member {
+    width: 450px;
     background-color: $primaryBgColor;
     border-bottom-right-radius: 4px;
     border-bottom-left-radius: 4px;
