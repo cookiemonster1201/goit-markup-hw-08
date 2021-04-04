@@ -1,0 +1,33 @@
+.menu-container {
+    @media screen and (max-width: 767px) {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        display: none;
+        width: 100%;
+        min-height: 796px;
+        padding: 32px 40px;
+        background-color: salmon;
+    }
+
+    &--open {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    @media screen and (min-width: $tabletWidth) {
+        @include flexCentered(space-between);   
+        flex-grow: 1;
+        margin-left: 88px;
+    }
+
+    @media screen and (min-width: $desktopWidth) {
+        margin-left: 93px;
+    }
+}
+
+
+
+
+

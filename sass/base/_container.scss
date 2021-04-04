@@ -1,7 +1,19 @@
 .container {
-    width: 1200px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
+    border: 2px solid tomato;
+
+    @media screen and (min-width: $mobileWidth) {
+        width: $mobileWidth;
+    }
+
+    @media screen and (min-width: $tabletWidth) {
+        width: $tabletWidth;
+    }
+
+    @media screen and (min-width: $desktopWidth) {
+        width: $desktopWidth;
+    }
 }

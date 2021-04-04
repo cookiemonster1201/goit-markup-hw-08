@@ -1,12 +1,23 @@
 .logo {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    display: block;
+    padding-top: 16px;
+    padding-bottom: 16px;
     font-family: $secondaryFont;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 24px;
+    line-height: 1.16;
     letter-spacing: 0.03em;
     color: #000;
+
+    @media screen and (min-width: $tabletWidth) {
+        padding-top: 26px;
+        padding-bottom: 26px;
+    }
+
+    @media screen and (min-width: $desktopWidth) {
+        padding-top: 24px;
+        padding-bottom: 25px;
+    }
 }
 
 .footer__logo {

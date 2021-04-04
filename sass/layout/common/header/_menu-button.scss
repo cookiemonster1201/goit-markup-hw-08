@@ -1,0 +1,32 @@
+.menu-button {
+    display: flex;
+    padding: 10px 0;
+    margin: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: fill 250ms $cubicBezier;
+
+    &:hover,
+    &:focus {
+        fill: $accentColor;
+        transition: fill 250ms $cubicBezier;
+    }
+    @media screen and (min-width: $tabletWidth) {
+        display: none;
+    }
+}
+
+.menu-button__icon-close {
+    display: none;
+
+    .menu-button--open & {
+        display: block;
+    }
+}
+
+.menu-button__icon-open {
+    .menu-button--open & {
+        display: none;
+    }
+}

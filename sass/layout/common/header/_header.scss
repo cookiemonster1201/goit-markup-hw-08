@@ -4,11 +4,20 @@
 }
 
 .header__container {
-    @include flexCentered($justifyContent: space-between);
+    position: relative;
 }
 
-.header__nav {
-    @include flexCentered();
+.header-nav {
+    @include flexCentered(space-between);
 }
+
+.header-nav__wrapper {
+    @media screen and (max-width: 767px) {
+        width: 100%;
+        @include flexCentered(space-between);
+    }
+}
+
+
 
 

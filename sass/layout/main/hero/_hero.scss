@@ -1,7 +1,7 @@
 .hero {
-    padding-top: 200px;
-    padding-bottom: 200px;
-    max-width: 1600px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    max-width: $mobileWidth;
     margin-left: auto;
     margin-right: auto;
     background-color: #c4c4c4;
@@ -14,23 +14,45 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+
+    @media screen and (min-width: $tabletWidth) {
+        max-width: $tabletWidth;
+    }
+
+    @media screen and (min-width: $desktopWidth) {
+        max-width: 1600px;
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
 }
 
 .hero__wrapper {
-    max-width: 696px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+
+    @media screen and (min-width: $tabletWidth) {
+        max-width: 430px;
+    }
+
+    @media screen and (min-width: $desktopWidth) {
+        max-width: 720px;
+    }
 }
 
 .hero__title {
-    margin-bottom: 43px;
+    margin-bottom: 30px;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.61;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: $darkThemeTextColor;
+
+    @media screen and (min-width: $desktopWidth) {
+        font-size: 44px;
+        line-height: 1.36;
+    }
 }
 
 .hero__button {
