@@ -1,18 +1,6 @@
 /* roboto-regular - latin */
 @font-face {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/roboto-v20-latin-regular.eot");
-  /* IE9 Compat Modes */
-  src: local(""), url("../fonts/roboto-v20-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v20-latin-regular.woff2") format("woff2"), url("../fonts/roboto-v20-latin-regular.woff") format("woff"), url("../fonts/roboto-v20-latin-regular.ttf") format("truetype"), url("../fonts/roboto-v20-latin-regular.svg#Roboto") format("svg");
-  /* Legacy iOS */
-}
-
-/* roboto-500 - latin */
-/* roboto-regular - latin */
-@font-face {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   src: url("../fonts/roboto-v20-latin-regular.eot");
@@ -23,7 +11,7 @@
 
 /* roboto-500 - latin */
 @font-face {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
   src: url("../fonts/roboto-v20-latin-500.eot");
@@ -34,7 +22,7 @@
 
 /* roboto-700 - latin */
 @font-face {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
   src: url("../fonts/roboto-v20-latin-700.eot");
@@ -49,7 +37,9 @@
   font-style: normal;
   font-weight: 900;
   src: url("../fonts/roboto-v20-latin-900.eot");
-  src: local("Roboto"), url("../fonts/roboto-v20-latin-900.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v20-latin-900.woff2") format("woff2"), url("../fonts/roboto-v20-latin-900.woff") format("woff"), url("../fonts/roboto-v20-latin-900.ttf") format("truetype"), url("../fonts/roboto-v20-latin-900.svg#Roboto") format("svg");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/roboto-v20-latin-900.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v20-latin-900.woff2") format("woff2"), url("../fonts/roboto-v20-latin-900.woff") format("woff"), url("../fonts/roboto-v20-latin-900.ttf") format("truetype"), url("../fonts/roboto-v20-latin-900.svg#Roboto") format("svg");
+  /* Legacy iOS */
 }
 
 /*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
@@ -827,7 +817,6 @@ img {
 }
 
 .hero {
-  font-family: 'Roboto';
   padding-top: 118px;
   padding-bottom: 118px;
   max-width: 480px;
