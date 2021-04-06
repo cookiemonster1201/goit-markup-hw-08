@@ -8,6 +8,7 @@
     line-height: 1.16;
     letter-spacing: 0.03em;
     color: #000;
+    animation-duration: 800ms;
 
     @media screen and (min-width: $tabletWidth) {
         padding-top: 26px;
@@ -21,11 +22,14 @@
 }
 
 .footer__logo {
-    display: block;
     padding-top: 0px;
     padding-bottom: 0px;
     margin-bottom: 20px;
     color: $darkThemeTextColor;
+
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+    }
 }
 
 .logo__text {

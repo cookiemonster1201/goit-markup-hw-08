@@ -1,16 +1,15 @@
 .section-title {
-    @media screen and (max-width: 767px) {
-        margin-bottom: 30px;
-        font-size: 28px;
-        line-height: 1.17;
-    }
-
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 1.17;
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
     letter-spacing: 0.03em;
     text-align: center;
     color: $secondaryTextColor;
-}
 
+    @media screen and (min-width: $tabletWidth) {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
+    }
+}

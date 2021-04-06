@@ -1,7 +1,7 @@
 .project {
     display: block;
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
+    transition: box-shadow 250ms $cubicBezier;
+    height: 100%;
     &:hover,
     &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -29,7 +29,7 @@
     overflow: hidden;
     color: $darkThemeTextColor;
     background: rgba(33, 150, 243, 0.9);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms linear;
+    transition: transform 250ms $cubicBezier, opacity 250ms $cubicBezier;
     
     .project:hover &,
     .project:focus & {
@@ -41,8 +41,8 @@
 
 .project__wrapper {
     padding: 20px 24px;
-    border: 1px solid #eee;
-    border-top: none;
+    overflow: hidden;
+    // border-top: none;
 }
 
 .project__title {
@@ -55,6 +55,7 @@
 }
 
 .project__type {
+    font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
     color: $primaryTextColor;

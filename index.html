@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Веб Студия</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
@@ -16,7 +17,7 @@
         <div class="header__container container">
             <nav class="header-nav">
                 <div class="header-nav__wrapper">
-                    <a class="logo link" href="#" target="_blank" rel="noopener noreferrer" lang="en"
+                    <a class="logo link animate__flipInY" href="#" target="_blank" rel="noopener noreferrer" lang="en"
                         aria-label="Web Studio">
                         <span class="logo__text">Web</span>Studio</a>
                     <button class="menu-button" 
@@ -90,7 +91,7 @@
         <!-- Герой!  -->
 
         <section class="hero">
-            <div class="hero__container container">
+            <div class="container">
                 <div class="hero__wrapper">
                     <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
                     <button class="hero__button button" type="button" data-modal-open>Заказать услугу</button>
@@ -101,8 +102,8 @@
 
         <!-- Особенности! -->
 
-        <section class="about section">
-            <div class="about__container container">
+        <section class="about">
+            <div class="container">
                 <h2 class="about__title visually-hidden">Наши Особенности</h2>
                 <ul class="features list">
                     <li class="features__item">
@@ -147,8 +148,8 @@
 
         <!-- Галерея студии! -->
 
-        <section class="gallery section">
-            <div class="gallery__container container">
+        <section class="gallery">
+            <div class="container">
                 <h2 class="section-title">Чем мы занимаемся</h2>
                 <ul class="gallery-set list">
                     <li class="gallery-set__item">
@@ -190,8 +191,8 @@
 
         <!-- Сотрудники! -->
 
-        <section class="employees section">
-            <div class="employees__container container">
+        <section class="employees">
+            <div class="container">
                 <h2 class="section-title">Наша команда</h2>
                 <ul class="employees__set list">
                     <li class="employees__item">
@@ -200,8 +201,7 @@
                                 class="team-member__img"
                                 src="./images/main/main-employees/employee-01.jpg" 
                                 alt="Игорь Демьяненко"
-                                width="270"
-                                height="260">
+                                width="450">
                             <div class="team-member__wrapper">    
                                 <h3 class="team-member__name">Игорь Демьяненко</h3>
                                 <p class="team-member__position" lang="en">Product Designer</p>
@@ -245,8 +245,7 @@
                                 class="team-member__img"
                                 src="./images/main/main-employees/employee-02.jpg" 
                                 alt="Ольга Репина" 
-                                width="270"
-                                height="260">
+                                width="450">
                             <div class="team-member__wrapper">
                                 <h3 class="team-member__name">Ольга Репина</h3>
                                 <p class="team-member__position" lang="en">Frontend Developer</p>
@@ -290,8 +289,7 @@
                                 class="team-member__img"
                                 src="./images/main/main-employees/employee-03.jpg" 
                                 alt="Николай Тарасов" 
-                                width="270"
-                                height="260">
+                                width="450">
                             <div class="team-member__wrapper">
                                 <h3 class="team-member__name">Николай Тарасов</h3>
                                 <p class="team-member__position" lang="en">Marketing</p>
@@ -335,8 +333,7 @@
                                 class="team-member__img"
                                 src="./images/main/main-employees/employee-04.jpg" 
                                 alt="Михаил Ермаков" 
-                                width="270"
-                                height="260">
+                                width="450">
                             <div class="team-member__wrapper">
                                 <h3 class="team-member__name">Михаил Ермаков</h3>
                                 <p class="team-member__position" lang="en">UI Designer</p>
@@ -380,8 +377,8 @@
 
         <!-- Клиенты! -->
 
-        <section class="clients section">
-            <div class="clients__container container">
+        <section class="clients">
+            <div class="container">
                 <h2 class="section-title">Постоянные клиенты</h2>
                 <ul class="regular-clients list">
                     <li class="regular-clients__item">           
@@ -461,7 +458,7 @@
             </div>
 
             <div class="footer__appeal-box">
-                <p class="footer__invitation">Присоединяйтесь</p>
+                <p class="appeal-text">Присоединяйтесь</p>
                 <ul class="social list">
                     <li class="social__item">
                         <a class="social__link social__link--dark-theme link" href="#" target="_blank" aria-label="Instagram">
@@ -495,7 +492,7 @@
             </div>
 
             <div class="footer__subscription-box">
-                <p class="footer__appeal">Подпишитесь на рассылку</p>
+                <p class="appeal-text">Подпишитесь на рассылку</p>
                 <form class="subscription-form" name="subscription-form">
                     <label>
                         <input class="subscription-form__input" type="email" name="email" placeholder="E-mail">
@@ -563,7 +560,7 @@
     </div>
 
     <script src="./js/modal.js"></script>
-    <script src="./js/menu.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

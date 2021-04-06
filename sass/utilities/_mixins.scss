@@ -1,7 +1,8 @@
-@mixin flexCentered($justifyContent: center, $alignItems: center) {
+@mixin flexCentered($justifyContent: center, $alignItems: center, $flexDirection: row) {
     display: flex;
     justify-content: $justifyContent;
     align-items: $alignItems;
+    flex-direction: $flexDirection;
 }
 
 @mixin grid ($leftMargin: -30px, $topMargin: -30px) {
@@ -9,4 +10,10 @@
     flex-wrap: wrap;
     margin-left: $leftMargin;
     margin-top: $topMargin;
+}
+
+@mixin sectionPattern ($bgColor: $primaryBgColor, $paddingTop: $sectionPaddingVertical, $paddingBottom: $sectionPaddingVertical) {
+    padding-top: $paddingTop;
+    padding-bottom: $paddingBottom;
+    background-color: $bgColor;
 }

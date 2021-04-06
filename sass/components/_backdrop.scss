@@ -13,4 +13,11 @@
         pointer-events: none;
         transition: opacity 250ms $cubicBezier, visibility 250ms $cubicBezier;
     }
+
+    @media screen and (max-width: 767px) {
+        padding-top: 93px;
+        padding-left: 15px;
+        padding-right: 15px;
+        overflow-y: scroll;
+    }
 }

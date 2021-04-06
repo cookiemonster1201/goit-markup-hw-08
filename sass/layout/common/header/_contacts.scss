@@ -4,13 +4,11 @@
     }
 
     @media screen and (min-width: $tabletWidth) {
-        display: flex;
-        flex-direction: column-reverse;
+        @include flexCentered($justifyContent: center, $alignItems: flex-start, $flexDirection: column-reverse);
     }
 
     @media screen and (min-width: $desktopWidth) {
-        display: flex;
-        flex-direction: row-reverse;
+        @include flexCentered($justifyContent: flex-start, $alignItems: center, $flexDirection: row-reverse);
     }
 }
 

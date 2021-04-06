@@ -1,10 +1,8 @@
 .about {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    @include sectionPattern ($primaryBgColor, 60px, 60px);
 
     @media screen and (min-width: $desktopWidth) {
-    padding-top: $sectionPaddingVertical;
-    padding-bottom: $sectionPaddingVertical;
+        @include sectionPattern ();
     }
 }
 
@@ -16,6 +14,7 @@
 }
 
 .features__item {
+    max-width: 450px;
     @media screen and (max-width: 767px) {
         &:not(:last-child) {
             margin-bottom: 30px;    
@@ -35,12 +34,10 @@
 
 .features__thumb {
     @include flexCentered();
-    width: 100%;
     height: 120px;
     margin-bottom: 30px;
     background-color: rgba(245, 244, 250, 1);
     border-radius: 4px;
-    text-align: center;
 }
 
 .features__title {
