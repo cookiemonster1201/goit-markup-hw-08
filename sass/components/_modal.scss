@@ -1,22 +1,35 @@
 .modal {
+    max-width: 450px;
+    width: 100%;
+    min-height: 609px;
     transform: scale(1);
     padding: 40px;
-    max-width: 450px;
-    min-height: 609px;
     overflow: hidden;
     background-color: $primaryBgColor;
     transition: transform 250ms $cubicBezier;
+
+    @media screen and (max-width: 767px) {
+        margin-left: auto;
+        margin-right: auto;
+    }
 
     @media screen and (min-width: $tabletWidth) {
         position: absolute;
         top: 50%;
         left: 50%; 
-        transform: translate(-50%, -50%);
-        }
+        transform: translate(-50%, -50%) scale(1);
+    }
+        
+    @media screen and (min-width: $desktopWidth) {
+        max-width: 528px;
+        min-height: 581px;
+    }
 
     .backdrop--hidden > & {
         transform: scale(0.8);
-        transition: transform 250ms $cubicBezier;
+        @media screen and (min-width: $tabletWidth) {
+            transform: translate(-50%, -50%) scale(0.8);
+        }
     }
 }
 
