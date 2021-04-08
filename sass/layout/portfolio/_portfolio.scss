@@ -14,6 +14,7 @@
 
 
 .card-set__item {
+    border: 1px solid #eee;
     @media screen and (max-width: 767px) {
         max-width: 450px;
         &:not(:last-child) {

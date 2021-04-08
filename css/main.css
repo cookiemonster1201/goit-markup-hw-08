@@ -1478,6 +1478,10 @@ img {
   }
 }
 
+.card-set__item {
+  border: 1px solid #eee;
+}
+
 @media screen and (max-width: 767px) {
   .card-set__item {
     max-width: 450px;
@@ -1598,9 +1602,6 @@ img {
 
 .project__wrapper {
   padding: 20px 24px;
-  min-height: 150px;
-  border: 1px solid #eee;
-  border-top: none;
 }
 
 .project__title {
