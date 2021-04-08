@@ -2,7 +2,7 @@
     @media screen and (max-width: 1199px) {
         display: none;
     }
-    @include sectionPattern ($primaryBgColor, 0);
+    @include sectionPattern ($primaryBgColor, 0, $sectionPaddingDesktop);
 }
 
 .gallery-set {
@@ -27,7 +27,6 @@
     width: 100%;
     min-height: 70px;
     overflow: hidden;
-    font-family: $mainFont;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.1;

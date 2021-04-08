@@ -1,8 +1,8 @@
 .about {
-    @include sectionPattern ($primaryBgColor, 60px, 60px);
+    @include sectionPattern ();
 
     @media screen and (min-width: $desktopWidth) {
-        @include sectionPattern ();
+        @include sectionPattern ($primaryBgColor, $sectionPaddingDesktop, $sectionPaddingDesktop);
     }
 }
 
@@ -15,6 +15,7 @@
 
 .features__item {
     max-width: 450px;
+    width: 100%;
     @media screen and (max-width: 767px) {
         &:not(:last-child) {
             margin-bottom: 30px;    

@@ -1,8 +1,8 @@
 .portfolio {
-    @include sectionPattern ($primaryBgColor, 60px, 60px);
+    @include sectionPattern ();
 
     @media screen and (min-width: $desktopWidth) {
-        @include sectionPattern ();
+        @include sectionPattern ($primaryBgColor, $sectionPaddingDesktop, $sectionPaddingDesktop);
     }
 }
 
@@ -14,7 +14,6 @@
 
 
 .card-set__item {
-    border: 1px solid #eee;
     @media screen and (max-width: 767px) {
         max-width: 450px;
         &:not(:last-child) {

@@ -1,8 +1,8 @@
 .clients {
-    @include sectionPattern ($primaryBgColor, 60px, 60px);
+    @include sectionPattern ();
 
     @media screen and (min-width: $desktopWidth) {
-        @include sectionPattern ();
+        @include sectionPattern ($primaryBgColor, $sectionPaddingDesktop, $sectionPaddingDesktop);
     }
 }
 
@@ -33,8 +33,7 @@
     border: 1px solid rgba(175, 177, 184, 1);
     border-radius: 4px;
     color: #afb1b8;
-    transition: color 250ms $cubicBezier,
-    border 250ms $cubicBezier;
+    transition: color 250ms $cubicBezier, border 250ms $cubicBezier;
     
     &:hover,
     &:focus {

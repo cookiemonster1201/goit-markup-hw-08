@@ -3,19 +3,22 @@
     top: 0;
     left: 0;
     opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.2);
-    overflow-y: scroll;
-    transition: opacity 250ms $cubicBezier;
+    overflow-y: auto;
+    transition: opacity 250ms $cubicBezier, visibility 250ms $cubicBezier;
+
     &--hidden {
         opacity: 0;
         visibility: hidden;
         pointer-events: none;
-        transition: opacity 250ms $cubicBezier, visibility 250ms $cubicBezier;
     }
 
     @media screen and (max-width: 767px) {
-        padding: 93px 15px;
+        padding-top: 93px;
+        padding-bottom: 93px;
     }
 }

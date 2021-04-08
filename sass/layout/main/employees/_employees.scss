@@ -1,8 +1,8 @@
 .employees {
-    @include sectionPattern ($secondaryBgColor, 60px, 60px);
+    @include sectionPattern ($secondaryBgColor);
 
     @media screen and (min-width: $desktopWidth) {
-        @include sectionPattern ($secondaryBgColor);
+        @include sectionPattern ($secondaryBgColor, $sectionPaddingDesktop, $sectionPaddingDesktop);
     }
 }
 

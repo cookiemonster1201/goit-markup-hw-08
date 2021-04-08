@@ -14,26 +14,31 @@
 <!-- Шапка! -->
 
     <header class="header">
-        <div class="header__container container">
+        <div class="container">
             <nav class="header-nav">
                 <div class="header-nav__wrapper">
                     <a class="logo link animate__flipInY" href="#" target="_blank" rel="noopener noreferrer" lang="en"
                         aria-label="Web Studio">
                         <span class="logo__text">Web</span>Studio</a>
-                    <button class="menu-button" 
+                    <button class="burger-button" 
                             type="button" 
-                            aria-label="переключатель мобильного меню"
-                            aria-expanded="false"
-                            aria-controls="menu-container"
+                            aria-label="открыть мобильное меню"
                             data-menu-button>
-                        <svg width="40" height="40">
-                            <use class="menu-button__icon-open" href="./images/icons.svg#icon-menu-mobile"></use>
-                            <use class="menu-button__icon-close" href="./images/icons.svg#icon-close-mobile"></use>
+                        <svg class="burger-button__icon" width="40" height="40">
+                            <use href="./images/icons.svg#icon-menu-mobile"></use>
                         </svg>                   
                     </button>
                 </div>
 
                 <div class="menu-container" id="menu-container" data-menu>
+                    <button class="menu-close-button" 
+                            type="button" 
+                            aria-label="закрыть мобильне меню"
+                            data-menu-close>
+                        <svg class="menu-close-button__icon" width="40" height="40">
+                            <use href="./images/icons.svg#icon-close-mobile"></use>
+                        </svg>
+                    </button>
                     <ul class="site-nav list">
                         <li class="site-nav__item">
                             <a class="site-nav__link site-nav__link--current link" href="./index.html">Студия</a>
@@ -50,15 +55,15 @@
                         <ul class="contacts list">
                             <li class="contacts__item">
                                 <a class="contacts__link tel-link link" href="tel:+380961111111">
-                                    <svg class="contacts__icon" width="10" height="16">
+                                    <svg class="contacts__icon-tel">
                                         <use href="./images/icons.svg#icon-smartphone"></use>
                                     </svg>
-                                    <span>+38&nbsp096&nbsp111&nbsp11&nbsp11</span>
+                                    <span>+380961111111</span>
                                 </a>
                             </li>
                             <li class="contacts__item">
                                 <a class="contacts__link link" href="mailto:info@devstudio.com">
-                                    <svg class="contacts__icon" width="16" height="12">
+                                    <svg class="contacts__icon-mail">
                                         <use href="./images/icons.svg#icon-envelope"></use>
                                     </svg>
                                     <span>info@devstudio.com</span>
@@ -154,34 +159,40 @@
                 <ul class="gallery-set list">
                     <li class="gallery-set__item">
                         <div class="gallery-set__thumb">
-                            <img 
-                                class="gallery-set__img"
-                                src="./images/main/main-studio/work-process-01.jpg" 
-                                alt="Сотрудник пишет код"
-                                width="370"
-                                height="294">
+                            <picture>
+                                <source
+                                    srcset="./images/desktop/gallery/desktop-apps@1x.webp 1x, ./images/desktop/gallery/desktop-apps@2x.webp 2x"
+                                    type="image/webp">
+                                <source
+                                    srcset="./images/desktop/gallery/desktop-apps@1x.jpg 1x, ./images/desktop/gallery/desktop-apps@2x.jpg 2x">
+                                <img class="gallery-set__img" src="./images/desktop/gallery/desktop-apps@1x.jpg" alt="Сотрудник пишет код">
+                            </picture>
                             <p class="gallery-set__overlay">Десктопные приложения</p>
                         </div>
                     </li>
                     <li class="gallery-set__item">
                         <div class="gallery-set__thumb">
-                            <img 
-                                class="gallery-set__img"
-                                src="./images/main/main-studio/work-process-02.jpg" 
-                                alt="Сотрудник адаптирует сайт под мобильные устройства" 
-                                width="370"
-                                height="294">
+                            <picture>
+                                <source
+                                    srcset="./images/desktop/gallery/mobile-apps@1x.webp 1x, ./images/desktop/gallery/mobile-apps@2x.webp 2x"
+                                    type="image/webp">
+                                <source
+                                    srcset="./images/desktop/gallery/mobile-apps@1x.jpg 1x, ./images/desktop/gallery/mobile-apps@2x.jpg 2x">
+                                <img class="gallery-set__img" src="./images/desktop/gallery/mobile-apps@1x.jpg" alt="Сотрудник адаптирует сайт под мобильные устройства">
+                            </picture>
                             <p class="gallery-set__overlay">Мобильные приложения</p>
                         </div>
                     </li>
                     <li class="gallery-set__item">
                         <div class="gallery-set__thumb">
-                            <img 
-                                class="gallery-set__img"
-                                src="./images/main/main-studio/work-process-03.jpg" 
-                                alt="Дизайнер работает с палитрой" 
-                                width="370"
-                                height="294">
+                            <picture>
+                                <source
+                                    srcset="./images/desktop/gallery/designer-services@1x.webp 1x, ./images/desktop/gallery/designer-services@2x.webp 2x"
+                                    type="image/webp">
+                                <source
+                                    srcset="./images/desktop/gallery/designer-services@1x.jpg 1x, ./images/desktop/gallery/designer-services@2x.jpg 2x">
+                                <img class="gallery-set__img" src="./images/desktop/gallery/designer-services@1x.jpg" alt="Дизайнер работает с палитрой">
+                            </picture>
                             <p class="gallery-set__overlay">Дизайнерские решения</p>
                         </div>
                     </li>
@@ -197,11 +208,25 @@
                 <ul class="employees__set list">
                     <li class="employees__item">
                         <div class="team-member">
-                            <img 
-                                class="team-member__img"
-                                src="./images/main/main-employees/employee-01.jpg" 
-                                alt="Игорь Демьяненко"
-                                width="450">
+                            <picture>
+                                <source
+                                    srcset="./images/desktop/team/ihor-demianenko@1x.webp 1x, ./images/desktop/team/ihor-demianenko@2x.webp 2x"
+                                    media="(min-width: 1200px)" type="image/webp">
+                                <source
+                                    srcset="./images/desktop/team/ihor-demianenko@1x.jpg 1x, ./images/desktop/team/ihor-demianenko@2x.jpg 2x"
+                                    media="(min-width: 1200px)">
+                                <source
+                                    srcset="./images/tablet/team/ihor-demianenko@1x.webp 1x, ./images/tablet/team/ihor-demianenko@2x.webp 2x"
+                                    media="(min-width: 768px)" type="image/webp">
+                                <source
+                                    srcset="./images/tablet/team/ihor-demianenko@1x.jpg 1x, ./images/tablet/team/ihor-demianenko@2x.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <source
+                                    srcset="./images/mobile/team/ihor-demianenko@1x.webp 1x, ./images/mobile/team/ihor-demianenko@2x.webp 2x" type="image/webp">
+                                <source
+                                    srcset="./images/mobile/team/ihor-demianenko@1x.jpg 1x, ./images/mobile/team/ihor-demianenko@2x.jpg 2x">
+                                <img class="team-member__img" src="./images/mobile/team/ihor-demianenko@1x.jpg" alt="Игорь Демьяненко">
+                            </picture>
                             <div class="team-member__wrapper">    
                                 <h3 class="team-member__name">Игорь Демьяненко</h3>
                                 <p class="team-member__position" lang="en">Product Designer</p>
@@ -241,11 +266,26 @@
 
                     <li class="employees__item">
                         <div class="team-member">
-                            <img 
-                                class="team-member__img"
-                                src="./images/main/main-employees/employee-02.jpg" 
-                                alt="Ольга Репина" 
-                                width="450">
+                            <picture>
+                                <source
+                                    srcset="./images/desktop/team/olha-repina@1x.webp 1x, ./images/desktop/team/olha-repina@2x.webp 2x"
+                                    media="(min-width: 1200px)" type="image/webp">
+                                <source
+                                    srcset="./images/desktop/team/olha-repina@1x.jpg 1x, ./images/desktop/team/olha-repina@2x.jpg 2x"
+                                    media="(min-width: 1200px)">
+                                <source
+                                    srcset="./images/tablet/team/olha-repina@1x.webp 1x, ./images/tablet/team/olha-repina@2x.webp 2x"
+                                    media="(min-width: 768px)" type="image/webp">
+                                <source
+                                    srcset="./images/tablet/team/olha-repina@1x.jpg 1x, ./images/tablet/team/olha-repina@2x.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <source
+                                    srcset="./images/mobile/team/olha-repina@1x.webp 1x, ./images/mobile/team/olha-repina@2x.webp 2x" 
+                                    type="image/webp">
+                                <source
+                                    srcset="./images/mobile/team/olha-repina@1x.jpg 1x, ./images/mobile/team/olha-repina@2x.jpg 2x">
+                                <img class="team-member__img" src="./images/mobile/team/olha-repina@1x.jpg" alt="Ольга Репина">
+                            </picture>
                             <div class="team-member__wrapper">
                                 <h3 class="team-member__name">Ольга Репина</h3>
                                 <p class="team-member__position" lang="en">Frontend Developer</p>
@@ -285,11 +325,26 @@
 
                     <li class="employees__item">
                         <div class="team-member">
-                            <img 
-                                class="team-member__img"
-                                src="./images/main/main-employees/employee-03.jpg" 
-                                alt="Николай Тарасов" 
-                                width="450">
+                            <picture>
+                                <source
+                                    srcset="./images/desktop/team/nikolai-tarasov@1x.webp 1x, ./images/desktop/team/nikolai-tarasov@2x.webp 2x"
+                                    media="(min-width: 1200px)" type="image/webp">
+                                <source
+                                    srcset="./images/desktop/team/nikolai-tarasov@1x.jpg 1x, ./images/desktop/team/nikolai-tarasov@2x.jpg 2x"
+                                    media="(min-width: 1200px)">
+                                <source
+                                    srcset="./images/tablet/team/nikolai-tarasov@1x.webp 1x, ./images/tablet/team/nikolai-tarasov@2x.webp 2x"
+                                    media="(min-width: 768px)" type="image/webp">
+                                <source
+                                    srcset="./images/tablet/team/nikolai-tarasov@1x.jpg 1x, ./images/tablet/team/nikolai-tarasov@2x.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <source
+                                    srcset="./images/mobile/team/nikolai-tarasov@1x.webp 1x, ./images/mobile/team/nikolai-tarasov@2x.webp 2x" 
+                                    type="image/webp">
+                                <source
+                                    srcset="./images/mobile/team/nikolai-tarasov@1x.jpg 1x, ./images/mobile/team/nikolai-tarasov@2x.jpg 2x">
+                                <img class="team-member__img" src="./images/mobile/team/nikolai-tarasov@1x.jpg" alt="Николай Тарасов">
+                            </picture>
                             <div class="team-member__wrapper">
                                 <h3 class="team-member__name">Николай Тарасов</h3>
                                 <p class="team-member__position" lang="en">Marketing</p>
@@ -329,11 +384,26 @@
 
                     <li class="employees__item">
                         <div class="team-member">
-                            <img 
-                                class="team-member__img"
-                                src="./images/main/main-employees/employee-04.jpg" 
-                                alt="Михаил Ермаков" 
-                                width="450">
+                            <picture>
+                                <source
+                                    srcset="./images/desktop/team/mikhail-yermakov@1x.webp 1x, ./images/desktop/team/mikhail-yermakov@2x.webp 2x"
+                                    media="(min-width: 1200px)" type="image/webp">
+                                <source
+                                    srcset="./images/desktop/team/mikhail-yermakov@1x.jpg 1x, ./images/desktop/team/mikhail-yermakov@2x.jpg 2x"
+                                    media="(min-width: 1200px)">
+                                <source
+                                    srcset="./images/tablet/team/mikhail-yermakov@1x.webp 1x, ./images/tablet/team/mikhail-yermakov@2x.webp 2x"
+                                    media="(min-width: 768px)" type="image/webp">
+                                <source
+                                    srcset="./images/tablet/team/mikhail-yermakov@1x.jpg 1x, ./images/tablet/team/mikhail-yermakov@2x.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <source
+                                    srcset="./images/mobile/team/mikhail-yermakov@1x.webp 1x, ./images/mobile/team/mikhail-yermakov@2x.webp 2x" 
+                                    type="image/webp">
+                                <source
+                                    srcset="./images/mobile/team/mikhail-yermakov@1x.jpg 1x, ./images/mobile/team/mikhail-yermakov@2x.jpg 2x">
+                                <img class="team-member__img" src="./images/mobile/team/mikhail-yermakov@1x.jpg" alt="Михаил Ермаков">
+                            </picture>
                             <div class="team-member__wrapper">
                                 <h3 class="team-member__name">Михаил Ермаков</h3>
                                 <p class="team-member__position" lang="en">UI Designer</p>

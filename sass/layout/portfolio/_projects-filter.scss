@@ -14,8 +14,8 @@
 }
 
 .projects-filter__option {
-    &:not(:first-child) {
-    margin-left: 8px;
+    &:not(:last-child) {
+    margin-right: 8px;
     }
     @media screen and (max-width: 767px) {
     margin-bottom: 15px;

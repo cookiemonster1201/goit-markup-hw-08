@@ -15,7 +15,7 @@
     border-radius: 4px;
     
     &::placeholder {
-        font-family: var(--main-font);
+        font-family: inherit;
         font-size: 16px;
         line-height: 1.25;
         letter-spacing: 0.03em;

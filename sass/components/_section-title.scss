@@ -7,7 +7,7 @@
     text-align: center;
     color: $secondaryTextColor;
 
-    @media screen and (min-width: $tabletWidth) {
+    @media screen and (min-width: $desktopWidth) {
     margin-bottom: 50px;
     font-size: 36px;
     line-height: 1.16;

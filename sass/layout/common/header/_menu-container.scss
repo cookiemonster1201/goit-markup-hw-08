@@ -1,20 +1,29 @@
 .menu-container {
     @media screen and (max-width: 767px) {
-        position: absolute;
-        z-index: 1000;
-        top: 100%;
-        left: 0;
-        display: none;
-        width: 100%;
-        min-height: 796px;
+        position: fixed;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 999;
+        width: 100vw;
+        max-width: 480px;
+        height: 100vh;
         padding: 32px 40px;
-        background-color: salmon;
+        overflow: auto;
+        background-color: $primaryBgColor;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: opacity 250ms $cubicBezier, visibility 250ms $cubicBezier;
     }
 
     &--open {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
     }
     
     @media screen and (min-width: $tabletWidth) {
@@ -29,6 +38,35 @@
 }
 
 
+.burger-button {
+    padding: 0;
+    border: none;
+    background-color: transparent;
 
+    @media screen and (min-width: $tabletWidth) {
+        display: none;
+    }
+}
 
+.menu-close-button {
+    @extend .burger-button;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    &:hover .menu-close-button__icon {
+        fill: $accentColor;
+    }
+}
+.burger-button__icon {
+    .burger-button:hover &,
+    .burger-button:focus & {
+        fill: $accentColor;
+    }
+}
 
+.menu-close-button__icon {
+    .menu-close-button:hover &,
+    .menu-close-button:focus & {
+        fill: $accentColor;
+    }
+}

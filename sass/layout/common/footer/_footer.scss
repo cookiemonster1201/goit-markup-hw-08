@@ -1,7 +1,5 @@
 .footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background-color: $footerBgColor;
+    @include sectionPattern ($footerBgColor);
 }
 
 .footer__container {

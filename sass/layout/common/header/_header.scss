@@ -3,10 +3,6 @@
     border-bottom: 1px solid #eee;
 }
 
-.header__container {
-    position: relative;
-}
-
 .header-nav {
     @include flexCentered(space-between);
 }
