@@ -1469,6 +1469,12 @@ img {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .card-set {
+    margin-top: 40px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .card-set {
     display: flex;
@@ -1511,7 +1517,7 @@ img {
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-bottom: 25px;
+  margin-bottom: -15px;
 }
 
 @media screen and (min-width: 768px) {
