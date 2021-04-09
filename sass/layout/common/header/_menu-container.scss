@@ -2,16 +2,14 @@
     @media screen and (max-width: 767px) {
         position: fixed;
         top: 0;
-        left: 50%;
-        transform: translateX(-50%);
+        left: 0;
         z-index: 999;
         width: 100vw;
-        max-width: 480px;
+        max-width: 767px;
         height: 100vh;
         padding: 32px 40px;
         overflow: auto;
         background-color: $primaryBgColor;
-        outline: 1px solid #eee;
         opacity: 0;
         visibility: hidden;
         pointer-events: none;
@@ -19,9 +17,7 @@
     }
 
     &--open {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        @include flexCentered($justifyContent: space-between, $alignItems: flex-start, $flexDirection: column);
         opacity: 1;
         visibility: visible;
         pointer-events: auto;
