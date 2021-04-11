@@ -75,6 +75,7 @@
 
 .user-info-form__terms-label {
     @include flexCentered();
+    flex-wrap: wrap;
     margin-bottom: 30px;
     font-size: 12px;
     line-height: 1.16;
