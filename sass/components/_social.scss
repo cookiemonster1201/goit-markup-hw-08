@@ -1,14 +1,14 @@
 .social {
-    display: flex;
-    justify-content: space-between;
-    width: 206px;
-    margin-left: auto;
-    margin-right: auto;
+    @include flexCentered($justifyContent: center, $alignItems: center, $flexDirection: row);
+    min-width: 206px;
 }
 
 .social__item {
     width: 44px;
     height: 44px;
+    &:not(:first-child) {
+        margin-left: 10px;
+    }
 }
 
 .social__icon {

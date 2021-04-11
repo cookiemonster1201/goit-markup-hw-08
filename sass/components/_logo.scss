@@ -1,16 +1,19 @@
 .logo {
-    display: block;
-    padding-top: 16px;
-    padding-bottom: 16px;
     font-family: $secondaryFont;
     font-weight: 700;
     font-size: 24px;
     line-height: 1.16;
     letter-spacing: 0.03em;
     color: #000;
-    animation-duration: 800ms;
+}
 
+.header__logo {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    animation-duration: 800ms;
+    
     @media screen and (min-width: $tabletWidth) {
+        display: block;
         padding-top: 26px;
         padding-bottom: 26px;
     }
@@ -22,13 +25,12 @@
 }
 
 .footer__logo {
-    padding-top: 0px;
-    padding-bottom: 0px;
+    display: block;
     margin-bottom: 20px;
     color: $darkThemeTextColor;
 
     @media screen and (max-width: 1199px) {
-        text-align: center;
+    text-align: center;
     }
 }
 

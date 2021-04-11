@@ -8,7 +8,7 @@
         max-width: 767px;
         height: 100vh;
         padding: 32px 40px;
-        overflow: auto;
+        overflow-y: auto;
         background-color: $primaryBgColor;
         opacity: 0;
         visibility: hidden;

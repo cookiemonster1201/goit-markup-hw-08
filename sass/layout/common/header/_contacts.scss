@@ -87,13 +87,10 @@
     @media screen and (min-width: $tabletWidth) {
         width: 14px;
         height: 10px;
-        margin-right: 8px;
-        fill: currentColor;
     }
 
     @media screen and (min-width: $desktopWidth) {
         width: 16px;
         height: 12px;
-        margin-right: 10px;
     }
 }

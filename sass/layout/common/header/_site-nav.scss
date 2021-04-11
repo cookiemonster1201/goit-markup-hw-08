@@ -48,9 +48,9 @@
             left: 0;
             bottom: 0;
             transform: translateY(1px);
+            content: "";
             height: 4px;
             width: 100%;
-            content: "";
             background-color: $accentColor;
             border-radius: 2px;
         }
