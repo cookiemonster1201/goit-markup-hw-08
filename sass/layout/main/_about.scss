@@ -15,7 +15,6 @@
 
 .features__item {
     max-width: 450px;
-    width: 100%;
     @media screen and (max-width: 767px) {
         &:not(:last-child) {
             margin-bottom: 30px;    
