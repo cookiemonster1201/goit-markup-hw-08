@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Портфолио</title>
+        <link rel="stylesheet" href="./css/aos.css">
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
@@ -117,7 +118,7 @@
                 <ul class="card-set list">
                     <li class="card-set__item">
                         <a class="project link" href="#">
-                            <div class="project__thumb">
+                            <div class="project__thumb"  data-aos="flip-right">
                                 <picture>
                                     <source
                                         srcset="./images/desktop/projects/tekhnokriak@1x.webp 1x, ./images/desktop/projects/tekhnokriak@2x.webp 2x"
@@ -179,7 +180,7 @@
                     </li>
                     <li class="card-set__item">
                         <a class="project link" href="#">
-                            <div class="project__thumb">
+                            <div class="project__thumb"  data-aos="flip-right">
                                 <picture>
                                     <source
                                         srcset="./images/desktop/projects/seafood@1x.webp 1x, ./images/desktop/projects/seafood@2x.webp 2x"
@@ -272,7 +273,7 @@
                     </li>
                     <li class="card-set__item">
                         <a class="project link" href="#">
-                            <div class="project__thumb">
+                            <div class="project__thumb"  data-aos="flip-right">
                                 <picture>
                                     <source
                                         srcset="./images/desktop/projects/inspiration@1x.webp 1x, ./images/desktop/projects/inspiration@2x.webp 2x"
@@ -303,7 +304,7 @@
                     </li>
                     <li class="card-set__item">
                         <a class="project link" href="#">
-                            <div class="project__thumb">
+                            <div class="project__thumb" data-aos="flip-right">
                                 <picture>
                                     <source
                                         srcset="./images/desktop/projects/limited-edition@1x.webp 1x, ./images/desktop/projects/limited-edition@2x.webp 2x"
@@ -365,7 +366,7 @@
                     </li>
                     <li class="card-set__item">
                         <a class="project link" href="#">
-                            <div class="project__thumb">
+                            <div class="project__thumb"  data-aos="flip-right">
                                 <picture>
                                     <source
                                         srcset="./images/desktop/projects/growing-business@1x.webp 1x, ./images/desktop/projects/growing-business@2x.webp 2x"
@@ -478,6 +479,10 @@
         </div>
     </footer>
 
+    <script src="./js/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
